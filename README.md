@@ -49,7 +49,42 @@ We support the following functions:
   - hex64_shift_left
   - hex64_shift_right_signed
 
-  ## Todo and limitations
+## Working node instructions
+
+Go to a new directory and load the library:
+
+```
+npm init
+npm i @lemire/jstypes
+// copy jstypes.wasm in the current directory, e.g., as
+cp node_modules/\@lemire/jstypes/jstypes.wasm .
+```
+
+
+
+Create and run the following script (e.g., as test.js):
+
+```
+var jstypes = require("@lemire/jstypes")
+
+
+jstypes.init().then(ready => {
+  console.log("FF000000000000 + 00111111111111 (32 bits) = "
+   +jstypes.hex64_add("FF000000000000","00111111111111",32));
+
+  console.log("FF000000000000 + 00111111111111 (64 bits) = "
+  +jstypes.hex64_multiply("FF000000000000","00111111111111",64));
+
+  console.log("FF000000000000 shifted by 35 bits in signed mode is = "
+  +jstypes.hex64_shift_right_signed("FF00000000000000",35, 64));
+
+}).
+catch(error => {
+  console.log(error.message);
+});
+```
+
+## Todo and limitations
 
 - This code is largely untested.
 - It is unclear whether it works in a browser (only tested in node).
