@@ -1,0 +1,24 @@
+{
+  "name": "@lemire/jstypes",
+  "version": "1.0.0",
+  "description": "Doing C-like arithmetic and logical operations in JavaScript (full 64-bit support)",
+  "main": "jstypeswrap.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lemire/jstypes.git"
+  },
+  "keywords": [
+    "wasm",
+    "arithmetic",
+    "long"
+  ],
+  "author": "Daniel Lemire",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/lemire/jstypes/issues"
+  },
+  "homepage": "https://github.com/lemire/jstypes#readme"
+}
