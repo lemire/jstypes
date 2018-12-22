@@ -88,5 +88,5 @@ catch(error => {
 
 - This code is largely untested.
 - It is unclear whether it works in a browser (only tested in node).
-- We do not support floating-point operations.
+- We do not support floating-point operations (but it is easily added).
 - It is unclear whether you can go from hex64 to float and back without error (you almost certainly can't).
