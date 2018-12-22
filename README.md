@@ -57,8 +57,6 @@ Go to a new directory and load the library:
 ```
 npm init
 npm i @lemire/jstypes
-// copy jstypes.wasm in the current directory, e.g., as
-cp node_modules/\@lemire/jstypes/jstypes.wasm .
 ```
 
 
