@@ -1,6 +1,6 @@
 {
   "name": "@lemire/jstypes",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Doing C-like arithmetic and logical operations in JavaScript (full 64-bit support)",
   "main": "jstypeswrap.js",
   "scripts": {
